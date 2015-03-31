@@ -1,0 +1,71 @@
+font-lg = 2.6rem
+font-md = 1.62rem
+font-sm = 1.3rem
+font-xs = 1rem
+line-height = 1.62
+color-default = #333
+color-muted = #888
+color-border = #eee
+gutter-lg = 2rem
+gutter-md = 1rem
+gutter-sm = 0.62rem
+
+*
+	box-sizing border-box
+	margin 0
+	padding 0
+
+html
+	font-size 62.5%
+html, body, main
+	height 100%
+body
+	font font-md/line-height 'Helvetica Neue', Helvetica, sans-serif
+	color color-default
+	margin 0
+	padding 0
+	// user-select none
+main
+	overflow hidden
+	display flex
+	align-items top
+	justify-content center
+	flex-direction row
+.app-graph
+	overflow hidden
+	flex 1
+	outline 1px dotted green
+	svg
+		outline 1px dotted red
+aside
+	display flex
+	flex-direction column
+	justify-content space-between
+	padding gutter-sm gutter-md
+.app-list
+	list-style none
+	li
+		display flex
+		align-items center
+		> *
+			margin-right gutter-md
+			&:last-child
+				margin-right 0
+		.name
+			flex 1
+			cursor pointer
+		&.app-stale
+			.name
+				color color-muted
+		&.app-hidden
+			.name
+				text-decoration line-through
+		&.app-selected
+			.name
+				text-decoration underline
+.memory-list
+	list-style none
+	li
+		display flex
+		.name
+			flex 1

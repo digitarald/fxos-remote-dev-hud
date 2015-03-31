@@ -1,0 +1,46 @@
+{
+  "name": "fxos-remote-dev-hud",
+  "version": "0.0.1",
+  "description": "Firefox OS Remote Dev Hud",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch server.js --exec babel-node -- server.js"
+  },
+  "keywords": [
+    "firefox",
+    "os",
+    "devtools",
+    "memory"
+  ],
+  "author": "Harald Kirschner <npm@digitarald.com> (http://digitarald.de/)",
+  "license": "MIT",
+  "dependencies": {
+    "adbkit": "^2.1.6",
+    "autoprefixer-loader": "^1.2.0",
+    "babel": "^4.7.16",
+    "babel-core": "^4.7.16",
+    "babel-loader": "^4.2.0",
+    "bluebird": "^2.9.14",
+    "classnames": "^1.2.0",
+    "css-loader": "^0.9.1",
+    "d3": "^3.5.5",
+    "express": "^4.12.3",
+    "lodash": "^3.6.0",
+    "mkdirp": "^0.5.0",
+    "nodemon": "^1.3.7",
+    "nomnom": "^1.8.1",
+    "opener": "^1.4.1",
+    "portfinder": "^0.4.0",
+    "prettysize": "0.0.3",
+    "prink": "0.0.2",
+    "react": "^0.13.1",
+    "request-promise-json": "^1.0.4",
+    "style-loader": "^0.9.0",
+    "stylus-loader": "^1.0.0",
+    "temp": "^0.8.1",
+    "webpack": "^1.7.3",
+    "webpack-dev-middleware": "^1.0.11",
+    "webpack-dev-server": "^1.7.0",
+    "winston": "^0.9.0"
+  }
+}
